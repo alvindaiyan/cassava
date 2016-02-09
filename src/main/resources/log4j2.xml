@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Properties>
+        <Property name="log-path">/cassandra-logs/</Property>
+        <!--<Property name="log-path">${env:LOG_PATH}</Property>-->
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%msg%n" />
+        </Console>
+        <RollingFile name="RollingFile" fileName="${log-path}/cassandra-server.log"
+                     filePattern="${log-path}/server-%d{yyyy-MM-dd}-%i.log" immediateFlush="false" append="false">
+            <PatternLayout>
+                <pattern>%d{dd/MMM/yyyy HH:mm:ss,SSS}- %c{1}: %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="8192 KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="4"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <logger name="com.datastax.cassandra" level="error" />
+        <logger name="com.cassava" level="debug" />
+        <Root level="info" >
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>
