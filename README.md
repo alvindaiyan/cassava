@@ -1,4 +1,4 @@
-# What is Cassava?
+# What is Cassava? [![Build Status](https://travis-ci.org/alvindaiyan/cassava.svg?branch=master)](https://travis-ci.org/alvindaiyan/cassava)
 
 # Why Cassandra?
 
