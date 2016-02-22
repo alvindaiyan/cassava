@@ -1,5 +1,8 @@
 # What is Cassava? [![Build Status](https://travis-ci.org/alvindaiyan/cassava.svg?branch=master)](https://travis-ci.org/alvindaiyan/cassava)
 
+Apache Cassandra is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra offers robust support for clusters spanning multiple datacenters,[1] with asynchronous masterless replication allowing low latency operations for all clients. 
+                                                               ( [wikipedia](https://en.wikipedia.org/wiki/Apache_Cassandra))
+
 # Why Cassandra?
 
 Cassandra is one of the most used NoSql database today. Cassandra has provided great scalibility with easy configuration in YAML format. There are lots of morden commercial product are using Cassandra such as Netflix, Spotify and Coursera. As Cassandra became more and more popular, the eco-system has grow up very quickly such as a whole distributed computing solution using Cassandra and Hadoop. 
