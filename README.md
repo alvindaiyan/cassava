@@ -17,3 +17,5 @@ Cassava supports Cassandra 3+. The reason is cassava has extensively used cassan
 # How to use
 
 # Lisence
+
+This software is under Apache License Version 2.0, January 2004.
