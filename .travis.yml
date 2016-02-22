@@ -6,7 +6,7 @@ install:
   - true
 
 script:
-    - ./installonfi
+    - ./install.sh
 
 jdk:
   - oraclejdk8
